@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery Superclick dropdown menu example.</title>
+		<link rel="stylesheet" href="css/superfish.css" media="screen">
+		<style> body { max-width: 40em; } </style>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/superclick.js"></script>
+		<script>
+
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+
+			$(document).ready(function(){
+
+				// initialise plugin
+				var example = $('#example').superclick({
+					//add options here if required
+				});
+
+				// buttons to demonstrate Superclick's public methods
+				$('.destroy').on('click', function(){
+					example.superclick('destroy');
+					return false;
+				});
+
+				$('.init').on('click', function(){
+					example.superclick();
+					return false;
+				});
+
+				$('.open').on('click', function(){
+					example.children('li:first').superclick('show');
+					return false;
+				});
+
+				$('.close').on('click', function(){
+					example.children('li:first').superclick('hide');
+					return false;
+				});
+
+				$('.closeall').on('click', function(){
+					example.superclick('reset');
+					return false;
+				});
+			});
+
+		})(jQuery);
+
+
+		</script>
+	</head>
+	<body>
+		<ul class="sf-menu" id="example">
+			<li class="current">
+				<a href="followed.html">menu item 1</a>
+				<ul>
+					<li>
+						<a href="followed.html">menu item</a>
+					</li>
+					<li class="current">
+						<a href="followed.html">long menu item sets sub width</a>
+						<ul>
+							<li class="current"><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="followed.html">menu item 2</a>
+			</li>
+			<li>
+				<a href="followed.html">menu item 3</a>
+				<ul>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">short</a></li>
+							<li><a href="followed.html">short</a></li>
+							<li><a href="followed.html">short</a></li>
+							<li><a href="followed.html">short</a></li>
+							<li><a href="followed.html">short</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="followed.html">menu item</a>
+						<ul>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li><a href="followed.html">menu item</a></li>
+							<li>
+								<a href="followed.html">menu item</a>
+								<ul>
+									<li><a href="followed.html">short</a></li>
+									<li><a href="followed.html">short</a></li>
+									<li><a href="followed.html">short</a></li>
+									<li><a href="followed.html">short</a></li>
+									<li><a href="followed.html">short</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="followed.html">menu item 4</a>
+			</li>	
+		</ul>
+		<p style="clear:both;">Nunc turpis ligula, auctor ut, iaculis porta, consequat vel, turpis. Suspendisse sed diam. In scelerisque condimentum tellus. Vivamus et velit a ante consectetuer tempor. Nunc vitae mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Suspendisse lacinia, lacus a posuere molestie, tellus diam ullamcorper est, in mattis elit nisi nec odio. Aliquam a sem sit amet dolor viverra ornare. Curabitur elit velit, tempus vel, tempus at, ultricies non, arcu. Duis viverra tempus tellus. Duis dignissim convallis tortor. Phasellus nisl.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborun.</p>
+		<div class="method-buttons">
+			<button class="open">Open first submenu</button>
+			<button class="close">Close first submenu</button>
+			<button class="closeall">Close all submenus</button>
+			<button class="destroy">Destroy Superclick</button>
+			<button class="init">Restore Superclick</button>
+		</div>
+	</body>
+</html>

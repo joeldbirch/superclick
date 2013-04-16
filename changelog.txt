@@ -1,0 +1,3 @@
+Changelog for Superclick - a jQuery menu plugin
+
+v1.0.0 			Initial release. This separate, standalone plugin is forked from Superfish 1.7.2 and aims to provide a click-based menu while removing complexity from Superfish proper. Keyboard accessibility is via tab-focus and hitting return to open/close menus. Will likely need further accessibility work to notify user of presence of submenu when using screenreader. The user may wish to add this via ARIA attributes.

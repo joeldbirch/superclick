@@ -1,0 +1,28 @@
+{
+    "name": "superclick",
+    "title": "jQuery Superclick Menu Plugin",
+    "description": "Superclick is a jQuery drop-down menu enhancement plugin sharing many of Superfish's features but focusses solely on click events to open and close submenus.",
+    "keywords": [
+        "menu",
+        "dropdown",
+        "responsive",
+        "navigation",
+        "click"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Joel Birch"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/joeldbirch/superclick/master/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/joeldbirch/superclick/issues",
+    "homepage": "https://github.com/joeldbirch/superclick/",
+    "docs": "https://github.com/joeldbirch/superclick/",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
