@@ -4,7 +4,13 @@ This plugin shares many of [Superfish](https://github.com/joeldbirch/superfish)'
 
 ## Documentation and Demos
 
-For now, please use the [existing Superfish documentation](http://users.tpg.com.au/j_birch/plugins/superfish/) where you will find full explanations of the customisable features. The only difference is that the options related to hovers are omitted from Superclick and the `hoverClass` option is changed to `activeClass`. Here is a [quick demo of Superclick in action](http://users.tpg.com.au/j_birch/plugins/superclick/example.html).
+For now, please use the [existing Superfish documentation](http://users.tpg.com.au/j_birch/plugins/superfish/) where you will find full explanations of the customisable features. The only differences are:
+
+- options related to hovers are omitted from Superclick.
+- the `hoverClass` option is changed to `activeClass`.
+- there is no need to include the hoverIntent plugin.
+
+Here is a [quick demo of Superclick in action](http://users.tpg.com.au/j_birch/plugins/superclick/example.html).
 
 ## Download
 
