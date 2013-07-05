@@ -20,5 +20,3 @@ Here is a [quick demo of Superclick in action](http://users.tpg.com.au/j_birch/p
 
 - v1.0.0 Most of the regular Superfish features.
 - v1.0.0 Added `reset` method. Closes all open submenus and restores `pathClass` submenus if you are using that feature.
-
-[![endorse](https://api.coderwall.com/joeldbirch/endorsecount.png)](https://coderwall.com/joeldbirch)
