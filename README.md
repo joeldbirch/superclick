@@ -18,7 +18,7 @@ Here is a [quick demo of Superclick in action](http://users.tpg.com.au/j_birch/p
 
 ## Recently added features
 
+- v1.1.0 Include megamenu functionality from Superfish - you can now specify the popup element selector rather than it having to be a nested UL.
+- v1.1.0 Reorganise files and folders. Use Grunt for tasks as per Superfish. Add Bower support.
 - v1.0.0 Most of the regular Superfish features.
 - v1.0.0 Added `reset` method. Closes all open submenus and restores `pathClass` submenus if you are using that feature.
-
-[![endorse](https://api.coderwall.com/joeldbirch/endorsecount.png)](https://coderwall.com/joeldbirch)

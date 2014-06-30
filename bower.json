@@ -1,0 +1,22 @@
+{
+  "name": "superclick",
+  "version": "1.1.0",
+  "main": [
+  	"dist/js/superclick.js",
+  	"dist/css/superfish.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "Gruntfile.coffee",
+    "changelog.txt",
+    "node_modules",
+    "components",
+    "README.md",
+    "test",
+    "src"
+  ],
+  "dependencies": {
+  	"jquery": "~1.8"
+  }
+}

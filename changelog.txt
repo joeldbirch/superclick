@@ -1,3 +1,5 @@
 Changelog for Superclick - a jQuery menu plugin
 
 v1.0.0 			Initial release. This separate, standalone plugin is forked from Superfish 1.7.2 and aims to provide a click-based menu while removing complexity from Superfish proper. Keyboard accessibility is via tab-focus and hitting return to open/close menus. Will likely need further accessibility work to notify user of presence of submenu when using screenreader. The user may wish to add this via ARIA attributes.
+
+v1.1.0			Reorganise files and folders. Use Grunt for tasks as per Superfish. Add Bower support. Code health changes as per jshint rules. Update supersubs to include minor bug fix from Superfish repo. Include megamenu functionality from Superfish - you can now specify the popup element selector rather than it having to be a nested UL. Renamed $ul var to $popUp to suit.
